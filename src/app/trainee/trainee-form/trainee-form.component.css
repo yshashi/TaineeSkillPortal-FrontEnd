@@ -1,0 +1,206 @@
+._formTitle {
+    height: 20px;
+    font-family: KPMG;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(17, 2, 2);
+}
+
+.mat-tab-label {
+    background: aqua;
+    color: blue;
+    width: 60px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+    background: brown;
+    height: 5px;
+}
+
+
+/* ._personlicheInfos {
+    border-bottom: 2px solid;
+    border-color: #549fa9;
+    margin-bottom: 5px;
+} */
+
+
+/* input styl */
+
+._infosinput {
+    margin-left: 1%;
+    width: 24%;
+}
+
+
+/* skill table style */
+
+._formContainer {
+    min-width: 600px;
+    max-width: 1300px;
+    width: 100%;
+    box-shadow: inset 0px 3px 0 rgba(255, 255, 255, 0.3), 0 3px 3px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    border-top: solid 3px #549fa9;
+    /* text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.65); */
+    transition: .4s;
+    padding-right: 2px;
+}
+
+
+/* add skilbtn style */
+
+._newSkillbtn {
+    border-bottom: solid 1px;
+    border-color: rgb(12, 12, 128);
+    min-width: 600px;
+    max-width: 1300px;
+    width: 100%;
+    height: 40px;
+    float: right;
+}
+
+._addSkillsbtn {
+    float: right;
+    margin-right: 1%;
+    margin-top: 1px;
+    color: white;
+    background-color: #27BF99;
+    border: none;
+    height: 35px;
+    width: auto;
+    font-size: 20px;
+    text-align: left;
+    white-space: pre;
+    position: sticky;
+}
+
+._addSkillsbtn:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+
+/* CSS */
+
+._btndiv {
+    width: 99%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+._cancelbtn {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #9e1d1d;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin-right: 5%;
+    min-height: 3rem;
+    position: relative;
+    text-decoration: none;
+    width: 150px;
+}
+
+._cancelbtn:hover,
+._cancelbtn:focus {
+    background-color: #9e1d1d;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+._cancelbtn:hover {
+    transform: translateY(-1px);
+}
+
+._cancelbtn:active {
+    background-color: #9e1d1d;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+._speichernbtn {
+    align-items: center;
+    width: 150px;
+    background-clip: padding-box;
+    background-color: rgb(66, 175, 36);
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 5%;
+    min-height: 3rem;
+    position: relative;
+    vertical-align: baseline;
+}
+
+._speichernbtn:hover,
+._cancelbtn:focus {
+    background-color: rgb(66, 175, 36);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+._speichernbtn:hover {
+    transform: translateY(-1px);
+}
+
+._speichernbtn:active {
+    background-color: rgb(66, 175, 36);
+    ;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+._deletebtndiv {
+    margin-right: 1%;
+    margin-top: 1%;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+
+._deletbtn :hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+._deletbtn {
+    cursor: pointer;
+    color: red;
+}
+
+
+/* skillsform */
+
+._skillform {
+    border-bottom: solid 2px;
+    margin-bottom: 5px;
+    border-color: #27BF99;
+}
+
+._Skillinputs {
+    margin-left: 1%;
+    width: 24%;
+}
+
+._Commentinputs {
+    margin-left: 1%;
+    width: 63%;
+}

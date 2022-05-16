@@ -1,0 +1,54 @@
+.toolbar {
+    position: sticky;
+    min-width: 600px;
+    /* max-width: 1300px; */
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    background-color: #0c4a88;
+    color: white;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+._navbar-logo {
+    max-width: 70%;
+    max-height: 70%;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 2%;
+    float: left;
+}
+
+._navbar-title {
+    margin-top: 15px;
+    font-family: KPMG;
+    padding-left: 15px;
+    float: left;
+    margin-left: 2%;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+._menuBtn {
+    margin-top: 15px;
+    height: 35px;
+    float: right;
+    margin-right: 5%;
+    /* margin-left: 70%; */
+    background-color: #0c4a88;
+    color: white;
+    font-size: 18px;
+    border: #0c4a88;
+}
+
+._menuBtn:hover {
+    cursor: pointer;
+    background-color: #175797;
+}

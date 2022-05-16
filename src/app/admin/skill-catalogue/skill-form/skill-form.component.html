@@ -1,0 +1,21 @@
+<p>skill-form works!</p>
+<div class="_container">
+    <h1 mat-dialog-title class="_dialogtitle">Neue Skill anlegen</h1>
+    <div mat-dialog-content>
+        <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label>skillName</mat-label>
+
+            <input title="skill name" matInput [(ngModel)]="skillName">
+        </mat-form-field>
+
+    </div>
+
+    <div mat-dialog-actions>
+        <button mat-button (click)="closeDialog()" id="cancelbutton">Cancel</button>
+        <button *ngIf="!isUpdate" mat-button mat-button [mat-dialog-close]="data" id="okbutton" (click)="addSkill()">Save</button>
+        <button *ngIf="isUpdate" mat-button mat-button [mat-dialog-close]="data" id="okbutton" (click)="updateSkill()">Update</button>
+    </div>
+
+
+
+</div>

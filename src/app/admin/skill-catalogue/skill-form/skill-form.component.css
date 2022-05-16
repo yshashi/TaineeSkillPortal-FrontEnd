@@ -1,0 +1,46 @@
+._container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+._dialogtitle {
+    text-align: center;
+    border-bottom: solid 2px;
+    border-color: #c9cac9d6;
+}
+
+#cancelbutton {
+    background-color: #BC204B;
+    color: white;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 100px;
+    margin: 2% auto;
+}
+
+#cancelbutton:hover,
+._btn:focus {
+    transform: translateY(-1px);
+    background-color: #BC204B;
+    cursor: pointer;
+}
+
+#okbutton {
+    background-color: #43B02A;
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    height: 35px;
+    width: 100px;
+    margin: 2% auto;
+    cursor: pointer;
+}
+
+#okbutton:hover,
+._btn:focus {
+    transform: translateY(-1px);
+    background-color: #43B02A;
+}

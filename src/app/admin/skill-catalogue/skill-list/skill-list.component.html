@@ -1,0 +1,31 @@
+<p>skill-list/table works!</p>
+
+<div class="_divcontainer">
+    <div class="_newSkillbtn">
+        <button type="button" (click)="onNewSkill()" class="_addSkillsbtn">New Skill</button>
+        <button type="button" routerLink="/admin" class="_backbtn">Backe</button>
+    </div>
+
+
+</div>
+<div style="margin-top: 70px;" class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Sr.No.</th>
+                <th scope="col">Skill Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of Skill; let i = index">
+                <td>{{i+1}}.</td>
+                <td>{{row.skillName}}</td>
+                <td style="width: 200px;">
+                    <button class="btn btn-success" (click)="onEditForm(row)">Edit</button>
+                    <button class="btn btn-danger" (click)="deleteSkill(row.skillCatalogueId)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

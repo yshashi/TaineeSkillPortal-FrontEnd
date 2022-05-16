@@ -1,0 +1,114 @@
+._newSkillbtn {
+    /* background-color: rgb(233, 233, 124); */
+    text-align: right;
+    border-bottom: solid 2px;
+    border-color: #cccfcf;
+    margin-bottom: 3px;
+}
+
+._divcontainer {
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: beige;
+    background-color: #e7f7f35e;
+    min-width: 500px;
+    width: 50%;
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 10%;
+}
+
+._addSkillsbtn {
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    font-size: 16px;
+    height: 35px;
+    width: 150px;
+    color: white;
+    background-color: #27BF99;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+._addSkillsbtn:hover {
+    transform: translateY(-1.5px);
+    transition: all 0.2s ease;
+}
+
+._backbtn {
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    font-size: 16px;
+    height: 35px;
+    width: 90px;
+    color: white;
+    background-color: #27BF99;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    float: left;
+}
+
+._backbtn:hover {
+    transform: translateY(-1.5px);
+    transition: all 0.2s ease;
+}
+
+.mat-icon {
+    margin-left: 5px;
+}
+
+._table {
+    min-width: 500px;
+    width: 100%;
+    margin: 1% auto;
+}
+
+th {
+    background-color: #5675E3;
+    border-left: solid 2px;
+    color: white;
+    font-size: 18px;
+    height: 40px;
+    letter-spacing: 2px;
+}
+
+th:nth-child(1) {
+    width: 70%;
+}
+
+th:nth-child(2) {
+    width: 30%;
+}
+
+tr {
+    height: 40px;
+    margin-right: 2px;
+    border-bottom: solid 2px;
+    border-color: white;
+    padding-left: 4%;
+}
+
+td {
+    border-right: solid 1px;
+    border-color: white
+}
+
+._editbtn {
+    position: relative;
+    color: #27BF99;
+    margin-left: 20%;
+    cursor: pointer;
+    /* float: left; */
+}
+
+._deletbtn {
+    position: relative;
+    float: right;
+    color: #e94545;
+    margin-right: 15%;
+    cursor: pointer;
+}

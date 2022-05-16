@@ -1,0 +1,15 @@
+<!-- Toolbar -->
+
+<div class="toolbar" role="banner">
+
+    <img src="assets/img/kpmg.png" class="_navbar-logo" /> <span class="mat-tab-nav-spacer"></span>
+    <a routerLink="/admin">
+        <span class="_navbar-title">Skillportal der Auszubildeden</span>
+    </a>
+
+    <button class="_menuBtn" mat-button [matMenuTriggerFor]="menu">Users</button>
+    <mat-menu #menu="matMenu">
+        <button routerLink="/admin" mat-menu-item>Admin</button>
+        <button routerLink="/traineesinterface" mat-menu-item>azubis/unknownuser</button>
+    </mat-menu>
+</div>

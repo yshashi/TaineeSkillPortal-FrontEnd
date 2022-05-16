@@ -1,0 +1,32 @@
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col">Email</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
+            <th scope="col">Role</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of traineeList">
+            <td>{{row.firstName}}</td>
+            <td>{{row.lastName}}</td>
+            <td>{{row.deptName}}</td>
+            <td>{{row.email}}</td>
+            <td>{{row.startDate | date}}</td>
+            <td>{{row.endDate | date}}</td>
+            <td>{{row.role}}</td>
+            <td>
+                <button class="btn  mx-2" (click)="sendEmployeeRecord(row)"><i class="fa fa-pencil text-success" aria-hidden="true"></i></button>
+                <button class="btn  mx-2" (click)="delete(row.id)"><i class="fa fa-trash text-danger" aria-hidden="true"></i></button>
+                <button class="btn  mx-2" (click)="openDialog(row.id)"><i class="fa fa-eye text-info" aria-hidden="true"></i></button>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+<!-- <button type="button" routerLink="/traineeform" class="_addUserbtn">Add New </button> -->
