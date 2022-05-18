@@ -39,4 +39,8 @@ export class ApiService {
   updateTrainee(data:any){
     return this.http.put<any>(`${this.baseApiUrl}/Trainee/update`,data)
   }
+
+  deleteSkill(id:number){
+    return this.http.delete<any>(`${this.baseApiUrl}/Skill/${id}`)
+  }
 }

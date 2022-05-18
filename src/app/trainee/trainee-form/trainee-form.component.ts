@@ -46,9 +46,14 @@ export class TraineeFormComponent implements OnInit {
   }
 
   //
-  onDeletSkill(skilsGroupIndex:number): void{
+  onDeletSkill(skilsGroupIndex:number,id:any): void{
 
     (<FormArray>this.newTraineeForm.get('skills')).removeAt(skilsGroupIndex);
+    console.log(id.value.skillId)
+    this.api.deleteSkill(id.value.skillId)
+    .subscribe(res=>{
+
+    })
   }
 
   //
@@ -119,8 +124,9 @@ export class TraineeFormComponent implements OnInit {
      })
   }
 
-
+  editMode:boolean = false;
   onEdit(event:any){
+    this.editMode = true;
     this.skillForm.clear();
     // this.newTraineeForm.setValue({
     //   firstName: event.firstName,
