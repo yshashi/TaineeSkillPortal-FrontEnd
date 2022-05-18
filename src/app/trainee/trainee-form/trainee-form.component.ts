@@ -54,12 +54,6 @@ export class TraineeFormComponent implements OnInit {
   //
   getControls() {
 
-     this.route.params.subscribe((params: Params) => {
-      // this.azubi_ID = +params['azubi_ID'];
-      // this.editMode = params['azubi_ID'] != null;
-      // this.editeForm();
-    });
-    //
     return (this.newTraineeForm.get('skills') as FormArray).controls;
   }
   get skillForm(): FormArray {
@@ -127,6 +121,7 @@ export class TraineeFormComponent implements OnInit {
 
 
   onEdit(event:any){
+    this.skillForm.clear();
     // this.newTraineeForm.setValue({
     //   firstName: event.firstName,
     //   lastName: event.lastName,
@@ -148,22 +143,24 @@ export class TraineeFormComponent implements OnInit {
     this.newTraineeForm.controls['role'].setValue(event.role);
     this.newTraineeForm.controls['startDate'].setValue(event.startDate);
     this.newTraineeForm.controls['endDate'].setValue(event.endDate);
-    event.skills.forEach((a:any) => {
-      this.skillForm.setValue([
-      {
-        skillId:a.skillId,
-        skillCatId:a.skillCatId,
-       teamName:a.teamName,
-       from:a.from,
-       to:a.to,
-       rating:a.rating,
-       comments:a.comments,
-       traineeModelId:a.traineeModelId
-      }
-      ])
+
+    event.skills.map((item:any, index:any) => {
+      const tmpDict:any = {};
+    tmpDict['skillId'] = new FormControl(item.skillId);
+    tmpDict['skillCatId'] = new FormControl(item.skillCatId);
+    tmpDict['teamName'] = new FormControl(item.teamName);
+    tmpDict['from'] = new FormControl(item.from);
+    tmpDict['to'] = new FormControl(item.to);
+    tmpDict['rating'] = new FormControl(item.rating);
+    tmpDict['comments'] = new FormControl(item.comments);
+    tmpDict['traineeModelId'] = new FormControl(item.traineeModelId);
+
+
+   this.skillForm.push(new FormGroup(tmpDict));
     });
 
   }
+  items!: FormArray;
   updateTrainee(){
     this.api.updateTrainee(this.newTraineeForm.value)
     .subscribe(res=>{
